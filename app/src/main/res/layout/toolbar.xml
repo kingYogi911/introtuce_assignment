@@ -5,6 +5,13 @@
     android:id="@+id/toolbar"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    app:title="Demo Application"
-    app:titleTextColor="@color/lightblue"
-    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    >
+    <TextView
+        android:textColor="@color/lightblue"
+        android:gravity="center_horizontal"
+        android:textSize="25dp"
+        android:text="@string/demo_application"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</androidx.appcompat.widget.Toolbar>
