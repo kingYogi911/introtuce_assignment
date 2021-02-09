@@ -117,6 +117,7 @@ public class addUserFragment extends Fragment {
                 }catch (Exception e){
                     builder.setMessage("Use dd/mm/yyyy pattern");
                     builder.create().show();
+                    return;
                 }
                 /* Validation of Phone Number*/
                 try{
@@ -124,6 +125,7 @@ public class addUserFragment extends Fragment {
                 }catch(Exception e){
                     builder.setMessage("Number is not a valid one");
                     builder.create().show();
+                    return;
                 }
 
                 //TimeStamp for Descending Order,while fetching from firebase Realtime Databse
